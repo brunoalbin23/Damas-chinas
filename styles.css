@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(./img/pexels-fwstudio-33348-129731.jpg);
+  background-size: cover;
+}
+
+h1{
+  font-size: 60px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 65px);
+  grid-template-rows: repeat(8, 65px);
+  border: 5px solid #000;
+}
+
+.celda {
+  width: 65px;
+  height: 65px;
+}
+
+.celda.blanca {
+  background-color: #fff;
+}
+
+.celda.negra {
+  background-color: #000;
+}
+
+.ficha {
+  width: 30px;
+  height: 30px;
+}
+
+.ficha.verde {
+  background-color: green;
+}
+
+.ficha.naranja {
+  background-color: orange;
+}
